@@ -1,0 +1,3 @@
+﻿  Game of Life.cpp
+C:\Users\Alex\OneDrive - Newcastle University\Game of Life\Game of Life\Game of Life.cpp(548,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+LINK : fatal error LNK1168: cannot open C:\Users\Alex\OneDrive - Newcastle University\Game of Life\x64\Debug\Game of Life.exe for writing

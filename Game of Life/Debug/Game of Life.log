@@ -1,0 +1,13 @@
+﻿  Game of Life.cpp
+C:\Users\Alex\Downloads\Game of Life\Game of Life\Game of Life\Shape.cpp(37,35): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Alex\Downloads\Game of Life\Game of Life\Game of Life\Game of Life.cpp(106,33): warning C4018: '>=': signed/unsigned mismatch
+C:\Users\Alex\Downloads\Game of Life\Game of Life\Game of Life\Game of Life.cpp(232,23): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Alex\Downloads\Game of Life\Game of Life\Game of Life\Game of Life.cpp(376,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Alex\Downloads\Game of Life\Game of Life\Game of Life\Game of Life.cpp(384,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Alex\Downloads\Game of Life\Game of Life\Game of Life\Game of Life.cpp(472,31): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Alex\Downloads\Game of Life\Game of Life\Game of Life\Game of Life.cpp(583,23): warning C4244: 'initializing': conversion from 'time_t' to 'int', possible loss of data
+C:\Users\Alex\Downloads\Game of Life\Game of Life\Game of Life\Game of Life.cpp(687,25): warning C4244: '=': conversion from 'time_t' to 'int', possible loss of data
+  LINK : C:\Users\Alex\Downloads\Game of Life\Game of Life\Debug\Game of Life.exe not found or not built by the last incremental link; performing full link
+  Game of Life.vcxproj -> C:\Users\Alex\Downloads\Game of Life\Game of Life\Debug\Game of Life.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.

@@ -1,0 +1,47 @@
+#pragma kernel CSMain
+
+#define WIDTH 1028
+#define HEIGHT 1028
+
+RWTexture2D<float> currentState;
+RWTexture2D<float> nextState;
+
+[numthreads(8, 8, 1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+    int x = id.x;
+    int y = id.y;
+
+    if (x >= WIDTH || y >= HEIGHT) return;
+     int aliveNeighbors = 0;
+     for (int i = -1; i <= 1; i++)
+     {
+         for (int j = -1; j <= 1; j++)
+         {
+             if (i == 0 && j == 0) continue;
+    
+             int nx = x + i;
+             int ny = y + j;
+    
+             if (nx >= 0 && nx < WIDTH && ny >= 0 && ny < HEIGHT)
+             {
+                 aliveNeighbors += currentState[int2(nx, ny)];
+             }
+         }
+     }
+    
+     float currentStateValue = currentState[int2(x, y)];
+    
+     if (currentStateValue == 1 && (aliveNeighbors < 2 || aliveNeighbors > 3))
+     {
+         nextState[int2(x, y)] = 0;
+     }
+     else if (currentStateValue == 0 && aliveNeighbors == 3)
+     {
+         nextState[int2(x, y)] = 1;
+     }
+     else
+     {
+         nextState[int2(x, y)] = currentStateValue;
+     }
+}

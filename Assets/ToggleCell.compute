@@ -1,0 +1,11 @@
+#pragma kernel ToggleCell
+
+RWTexture2D<float> currentState;
+int2 cellPos;
+
+[numthreads(1, 1, 1)]
+void ToggleCell (uint3 id : SV_DispatchThreadID)
+{
+    float cellState = currentState[cellPos];
+    currentState[cellPos] = 1.0f - cellState;
+}
